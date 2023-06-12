@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoginPage</title>
+    <script
+      src="https://kit.fontawesome.com/46219084ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="RegisterPage.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="bg_img"></div>
+      <div class="wrapper">
+        <div class="form_box">
+          <div class = "wrap2">
+            <h1 id="titlee">Sign up</h1>
+          </div>
+          <form>
+            <div class="input-group" id="in_group">
+              <div class="input-field" id="nameField">
+                <i id="logoUser" class="fa-solid fa-user"></i>
+                <input id="nameText" type="text" placeholder="Username" />
+              </div>
+              <div class="divError" id="divError1"></div>
+              <div class="input-field" id="passField">
+                <i id="logoPass" class="fa-solid fa-lock"></i>
+                <input id="passText" type="password" placeholder="Password" />
+              </div>
+
+              <div class="divError" id="divError2"></div>
+              <div class="input-field" id="ageField">
+                <i id="logoAge" class="fa-solid fa-user-graduate"></i>
+                <input id="ageText" type="age" placeholder="Age" />
+              </div>
+
+              <div class="divError" id="divError3"></div>
+              <div class="input-field" id="emailField">
+                <i id="logoEmail" class="fa-solid fa-envelope"></i>
+                <input id="emailText" type="email" placeholder="Email" />
+              </div>
+              <div class="divError" id="divError4"></div>
+              <label class="checkbox" id="cekboks" for="myCheckBoxId">
+                <input
+                  type="checkbox"
+                  name="checkboxTermofService"
+                  id="checkBoxId"
+                />
+                <!-- <div class="checkbox__box"></div> -->
+                I have agree the Term of Service & Privacy Policy
+              </label>
+              <div class="div Error" id="divError5"></div>
+            </div>
+            <button type="button" id="submitBtn">Submit</button>
+
+            <div class="btn-field">
+              <button type="button" onclick="clicked1()" id="signupBtn">
+                Sign Up
+              </button>
+              <button
+                type="button"
+                onclick="clicked()"
+                class="disable"
+                id="signinBtn"
+              >
+                Sign In
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="header">
+      <div id="headerlogo">
+        <img src="https://drive.google.com/uc?export=view&id=17D0XrMxjhH2_-3OqmILBpRX0_UuQeIcW" alt="logo" />
+      </div>
+      <div class="headerselainlogo">
+        <div class="headerkiri">
+          <div class="header__navbar">
+            <a href="GenshinSourceCode.html" class="nav_text">HOME</a>
+            <a href="CharacterPage.html" class="nav_text"> CHARACTERS </a>
+            <a href="MapsPage.html" class="nav_text">MAPS</a>
+            <a href="AboutPage.html" class="nav_text">ABOUT</a>
+          </div>
+        </div>
+        <div class="headerkanan">
+          <div id="nav_register">
+            <a href="RegisterPage.html" class="nav_text" id="regis">REGISTER</a>
+          </div>
+        </div>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="GenshinSourceCode.html" class="nav-text">Home</a>
+      <a href="CharacterPage.html" class="nav-text">Characters</a>
+      <a href="MapsPage.html" class="nav-text">Maps</a>
+      <a href="AboutPage.html" class="nav-text">About</a>
+      <a href="RegisterPage.html" class="nav-text">Register</a>
+    </nav>
+    <div id="footer">
+      <div class="logo">
+        <div class="logoscreen">
+          <img src="https://drive.google.com/uc?export=view&id=16XXqaT1eMp3g4ui9J-v3ddCbcZs6cM4h" alt="" />
+          <img src="https://drive.google.com/uc?export=view&id=1971jsz4_vApjPr8dCRtWmqSe5W-OuGhg" alt="" />
+          <img src="https://drive.google.com/uc?export=view&id=1f3QWLTiKhnPd_RDdMqyM7TwL0VDLHV4Y" alt="" />
+          <img src="https://drive.google.com/uc?export=view&id=1EQ1X_8aSV4M0aMxQ-fWgOkhw5f_zWcjZ" alt="" />
+          <img src="https://drive.google.com/uc?export=view&id=1hIUzTWqKkRKSwFZU1taoG2FoIYyrPNGA" alt="" />
+          <img src="https://drive.google.com/uc?export=view&id=1YPOZcMZ956S1loQDVPwGCphUUeSz2RCY" alt="" />
+        </div>
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">Facebook</span>
+          </div>
+          <ul class="menu">
+            <li class="option">Facebook</li>
+            <li class="option">Twitter</li>
+            <li class="option">Instagram</li>
+            <li class="option">Reddit</li>
+            <li class="option">Youtube</li>
+            <li class="option">Hoyolab</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_genshin">
+        <img src="https://drive.google.com/uc?export=view&id=17D0XrMxjhH2_-3OqmILBpRX0_UuQeIcW" />
+      </div>
+      <div class="first_line">
+        <p class="underline">Privacy Policy</p>
+        <p class="underline">Terms of Service</p>
+        <p class="underline">About Us</p>
+        <p class="underline">Contact Us</p>
+      </div>
+      <p class="paragraph">
+        Jenshin Impekz is an open-world, action role-playing game that allows
+        the player to control one of four interchangeable characters in a party.
+        Switching between characters can be done quickly during combat, allowing
+        the player to use several different combinations of skills and attacks.
+      </p>
+      <div class="seclastline">
+        <div class="boxform">
+          <p class="saran">Please give your feedback</p>
+        </div>
+        <div class="kirim">
+          <p class="stext">send</p>
+        </div>
+      </div>
+      <div class="lastline">
+        <img src="https://drive.google.com/uc?export=view&id=1uZxfOGGrvb4ERkq2wCBH8ZwSlI26vh7M" alt="" />
+      </div>
+      <p class="copyright">Copyright © RGB. All rights Reserved.</p>
+    </div>
+    <script src="RegisterPage.js"></script>
+  </body>
+</html>

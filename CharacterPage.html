@@ -1,0 +1,653 @@
+<!-- Character -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karakter</title>
+    <link rel="stylesheet" href="CharacterPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content-wrap" id="content">
+      <!-- overall character page  -->
+      <div class="char-content">
+        <div class="character monstadt1" id="monstadt_page">
+          <!-- background  -->
+          <div class="shadowbg"></div>
+          <div class="char_sidebar">
+            <div class="wrapper_sidebar">
+              <a
+                href="#monstadt_page"
+                id="char_city monstadt_op"
+                class="char_city"
+                onclick="glow(1)"
+              ></a>
+              <a
+                href="#liyue_page"
+                id="char_city liyue_op"
+                class="char_city"
+                onclick="glow(2)"
+              ></a>
+              <a
+                href="#inazuma_page"
+                id="char_city inazuma_op"
+                class="char_city"
+                onclick="glow(3)"
+              ></a>
+              <a
+                href="#sumeru_page"
+                id="char_city sumeru_op"
+                class="char_city"
+                onclick="glow(4)"
+              ></a>
+            </div>
+          </div>
+
+          <div class="bg-char">
+            <div class="each-char1">
+              <img
+                src="https://drive.google.com/uc?export=view&id=1P48U8UjpAsRBKR7vTZNPPCrlxerMdtN6"
+                class="logo_elemen"
+                alt=""
+              />
+              <!-- char and swoosh effect  -->
+              <img class="char-img" src="https://drive.google.com/uc?export=view&id=1rZnpCLbr0Y6QPTSkqLbRJtvEK9zOZPs6" />
+              <img
+                class="char-mobile"
+                src="https://drive.google.com/uc?export=view&id=1Nl5sca2qy-g38nSyhpJZCRQklDP0jvLS"
+              />
+              <div class="char_exp">
+                <p class="nama_char">EULA</p>
+                <div class="va">
+                  <span class="nama_va">
+                    <div class="symbol-wrap">
+                      <span class="symbol_va"></span>
+                    </div>
+                    <p class="text_va">VA: Sato Rana</p>
+                  </span>
+                  
+                </div>
+                <div class="keterangan">
+                  <!-- <div class="bg-transparan"> -->
+                  <p class="text_keterangan">
+                    A rebellious descendant of the old aristocracy who is always
+                    out on the battlefield. As one born into the old
+                    aristocracy, carrying the bloodline of sinners, Eula has
+                    needed a unique approach to the world to navigate the
+                    towering walls of prejudice peacefully.
+                  </p>
+                </div>
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1TQQrPLnBq5WfcgaxMKq0V9FX6DvtyahE"
+                  class="quote"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="each-char1">
+              <img
+                src="https://drive.google.com/uc?export=view&id=11UuvU27nfWvyed3zDqFo_In58uNsbcHO"
+                id="genchar"
+                alt=""
+                class="char-img"
+              />
+              <img
+                class="char-mobile"
+                src="https://drive.google.com/uc?export=view&id=15Mn143ELO1-YNARc2xP47AsWeZtWzFUx"
+              />
+              <img
+                src="https://drive.google.com/uc?export=view&id=1lCJytnPwG9PLIQfXubMPmxAzmRI_53Ak"
+                class="logo_elemen"
+                alt=""
+              />
+              <div class="char_exp">
+                <p class="nama_char">VENTI</p>
+                <div class="va">
+                  <span class="nama_va">
+                    <div class="symbol-wrap">
+                      <span class="symbol_va"></span>
+                    </div>
+                    <p class="text_va">VA: Murase Ayumu</p>
+                  </span>
+                  
+                </div>
+                <div class="keterangan">
+                  <!-- <div class="bg-transparan"> -->
+                  <p class="text_keterangan">
+                    A Bard that seems to have arrived on some unknown wind
+                    sometimes sings songs as old as the hill, and other times
+                    recittes poems fresh and new. Likes apples and lively
+                    places, but is not a fan of cheese or anything sticky.
+                  </p>
+                  <!-- </div> -->
+                </div>
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1gyCEIEvmr_ej84lkE0cUUmMIgVgFbrpQ"
+                  class="quote"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swoosh_wrap">
+              <img src="https://drive.google.com/uc?export=view&id=1W96_A2prLTRrG_uN9lHtn7WVslUW9iAX" alt="" class="swoosh" />
+            </div>
+          </div>
+          <div class="pilih_char">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1WMzXXN7k3RRT-1FMRzRHXpBIWtrZcAvr"
+              alt=""
+              class="tombol_pilih_char"
+              onclick="nextSlide(1,0)"
+            />
+            <div
+              id="charSlides"
+              class="card_monstadt"
+              onclick="showSlides(1,0)"
+            >
+              <div class="tgam_atas eula"></div>
+              <div class="tgam_bawah">
+                <p class="nama_char_card">Eula</p>
+              </div>
+            </div>
+            <div
+              id="charSlides"
+              class="card_monstadt"
+              onclick="showSlides(2,0)"
+            >
+              <div class="tgam_atas venti"></div>
+              <div class="tgam_bawah">
+                <p class="nama_char_card">Venti</p>
+              </div>
+            </div>
+            <img
+              src="https://drive.google.com/uc?export=view&id=1406EWskhKQ1xGP4aZ4qoXV4sHgHQGVRX"
+              alt=""
+              class="tombol_pilih_char"
+              onclick="nextSlide(-1,0)"
+            />
+          </div>
+        </div>
+        <div class="character liyue1" id="liyue_page">
+          <div class="shadowbg"></div>
+
+          <div class="bg-char">
+            <div class="each-char2">
+              <img
+                src="https://drive.google.com/uc?export=view&id=1lCJytnPwG9PLIQfXubMPmxAzmRI_53Ak"
+                class="logo_elemen"
+                alt=""
+              />
+
+              <!-- char and swoosh effect  -->
+              <img class="char-img" src="https://drive.google.com/uc?export=view&id=1svAD_8IuzYE3zHWfihVaBy7qx6c9EL7Y" />
+              <img
+                class="char-mobile"
+                src="https://drive.google.com/uc?export=view&id=1qrJxFr4vrMOwPZMy7zBXAmQmgfYCwRsX"
+              />
+              <div class="char_exp">
+                <p class="nama_char">XIAO</p>
+                <div class="va">
+                  <span class="nama_va">
+                    <div class="symbol-wrap">
+                      <span class="symbol_va"></span>
+                    </div>
+                    <p class="text_va">VA: Matsuoka Yoshitsugu</p>
+                  </span>
+                  
+                </div>
+                <div class="keterangan">
+                  <!-- <div class="bg-transparan"> -->
+                  <p class="text_keterangan">
+                    One of the mighty and illuminated adepti guarding Liyue,
+                    also heralded as the "Vigilant Yaksha". Despite his youthful
+                    appearance, tales of his exploits have been documented for
+                    millennia. He is especially fond of Wangshu Inn's Almond
+                    Tofu. This is because it tastes just like the sweet dreams
+                    he used to devour.
+                  </p>
+                </div>
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1h2dtzRENBM_4zUr7XatmYqdJqAbyS12J"
+                  class="quote"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="each-char2">
+              <img
+                src="https://drive.google.com/uc?export=view&id=1_PHehBOy5c3YfdIshhDaEAGyl2c1OVau"
+                id="genchar"
+                alt=""
+                class="char-img"
+              />
+              <img
+                class="char-mobile"
+                src="https://drive.google.com/uc?export=view&id=19idKcgzfxkg61Ox8BsQh7lnOZ7jQeQ_t"
+              />
+              <img
+                src="https://drive.google.com/uc?export=view&id=1ntn9K9Q5wxhED8szX1abKwgMhIGfNQ0q"
+                class="logo_elemen"
+                alt=""
+              />
+              <div class="char_exp">
+                <p class="nama_char">ZHONGLI</p>
+                <div class="va">
+                  <span class="nama_va">
+                    <div class="symbol-wrap">
+                      <span class="symbol_va"></span>
+                    </div>
+                    <p class="text_va">VA: MAENO Tomoaki</p>
+                  </span>
+                  
+                </div>
+                <div class="keterangan">
+                  <!-- <div class="bg-transparan"> -->
+                  <p class="text_keterangan">
+                    Wangsheng Funeral Parlor mysterious consultant. Handsome,
+                    elegant, and surpassingly learned. Though no one knows where
+                    Zhongli is from, he is a master of courtesy and rules. From
+                    his seat at Wangsheng Funeral Parlor, he performs all manner
+                    of rituals.
+                  </p>
+                  <!-- </div> -->
+                </div>
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1SwUpSPTgZb5c8bd0hjBXt7Mkhh91UqIv"
+                  class="quote"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swoosh_wrap">
+              <img src="https://drive.google.com/uc?export=view&id=1W96_A2prLTRrG_uN9lHtn7WVslUW9iAX" alt="" class="swoosh" />
+            </div>
+          </div>
+          <div class="pilih_char">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1WMzXXN7k3RRT-1FMRzRHXpBIWtrZcAvr"
+              alt=""
+              class="tombol_pilih_char"
+              onclick="nextSlide(1,1)"
+            />
+            <div
+              id="charSlides"
+              class="card_monstadt"
+              onclick="showSlides(1,1)"
+            >
+              <div class="tgam_atas xiao"></div>
+              <div class="tgam_bawah">
+                <p class="nama_char_card">Xiao</p>
+              </div>
+            </div>
+            <div
+              id="charSlides"
+              class="card_monstadt"
+              onclick="showSlides(2,1)"
+            >
+              <div class="tgam_atas zhongli"></div>
+              <div class="tgam_bawah">
+                <p class="nama_char_card">Zhongli</p>
+              </div>
+            </div>
+            <img
+              src="https://drive.google.com/uc?export=view&id=1406EWskhKQ1xGP4aZ4qoXV4sHgHQGVRX"
+              alt=""
+              class="tombol_pilih_char"
+              onclick="nextSlide(-1,1)"
+            />
+          </div>
+        </div>
+        <div class="character inazuma1" id="inazuma_page">
+          <!-- background  -->
+          <div class="shadowbg"></div>
+          <div class="bg-char">
+            <div class="each-char3">
+              <img
+                src="https://drive.google.com/uc?export=view&id=1P48U8UjpAsRBKR7vTZNPPCrlxerMdtN6"
+                class="logo_elemen"
+                alt=""
+              />
+              <!-- char and swoosh effect  -->
+              <img
+                class="char-img"
+                src="https://drive.google.com/uc?export=view&id=1cL44aSe4OQ5GIcZRgkyNVrXO4IN4PsjO"
+                id="char-img1"
+              />
+              <img
+                class="char-mobile"
+                src="https://drive.google.com/uc?export=view&id=130RwWPaluFpyIkUBk2uw98H8rSemwzKt"
+              />
+              <div class="char_exp">
+                <p class="nama_char">AYAKA</p>
+                <div class="va">
+                  <span class="nama_va">
+                    <div class="symbol-wrap">
+                      <span class="symbol_va"></span>
+                    </div>
+                    <p class="text_va">VA: Hayami Saori</p>
+                  </span>
+                  
+                </div>
+                <div class="keterangan">
+                  <!-- <div class="bg-transparan"> -->
+                  <p class="text_keterangan">
+                    Daughter of the Yashiro Commission's Kamisato Clan from
+                    Inazuma. Dignified and elegant, wise and determined. Sincere
+                    and pleasant to others. Universally loved by the Inazuma
+                    people, she has earned the title of Shirasagi Himegimi.
+                  </p>
+                </div>
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1v8C3rVqIB5gsy4Hnt8ABH0oyhNJbdSxg"
+                  class="quote"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="each-char3">
+              <img
+                src="https://drive.google.com/uc?export=view&id=1A4T5guHbWbL1p_L82bFvmzJvQM4MKBpv"
+                id="genchar"
+                alt=""
+                class="char-img"
+              />
+              <img
+                class="char-mobile"
+                src="https://drive.google.com/uc?export=view&id=1YOA7VCBFhSsd1b4j6_90pa6Z4C8CV6eu"
+              />
+              <img
+                src="https://drive.google.com/uc?export=view&id=1HQl11KBDrt0CBoW17vBjFa8GrITJOKOZ"
+                class="logo_elemen"
+                alt=""
+              />
+              <div class="char_exp">
+                <p class="nama_char">RAIDEN SHOGUN</p>
+                <div class="va">
+                  <span class="nama_va">
+                    <div class="symbol-wrap">
+                      <span class="symbol_va"></span>
+                    </div>
+                    <p class="text_va">VA: Sawashiro Miyuki</p>
+                  </span>
+                  
+                </div>
+                <div class="keterangan">
+                  <!-- <div class="bg-transparan"> -->
+                  <p class="text_keterangan">
+                    The Raiden Shogun is the awesome and terrible power of
+                    thunder incarnate, the exalted ruler of the Inazuma
+                    Shogunate. With the might of lightning at her disposal, she
+                    commits herself to the solitary pursuit of eternity.
+                  </p>
+                  <!-- </div> -->
+                </div>
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1CoZ771LT5kR74e24QL4FPxPGuGqfsccV"
+                  class="quote"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swoosh_wrap">
+              <img src="https://drive.google.com/uc?export=view&id=1W96_A2prLTRrG_uN9lHtn7WVslUW9iAX" alt="" class="swoosh" />
+            </div>
+          </div>
+          <div class="pilih_char">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1WMzXXN7k3RRT-1FMRzRHXpBIWtrZcAvr"
+              alt=""
+              class="tombol_pilih_char"
+              onclick="nextSlide(1,2)"
+            />
+            <div
+              id="charSlides"
+              class="card_monstadt"
+              onclick="showSlides(1,2)"
+            >
+              <div class="tgam_atas ayaka"></div>
+              <div class="tgam_bawah">
+                <p class="nama_char_card">Ayaka</p>
+              </div>
+            </div>
+            <div
+              id="charSlides"
+              class="card_monstadt"
+              onclick="showSlides(2,2)"
+            >
+              <div class="tgam_atas raiden"></div>
+              <div class="tgam_bawah">
+                <p class="nama_char_card">Raiden Shogun</p>
+              </div>
+            </div>
+            <img
+              src="https://drive.google.com/uc?export=view&id=1406EWskhKQ1xGP4aZ4qoXV4sHgHQGVRX"
+              alt=""
+              class="tombol_pilih_char"
+              onclick="nextSlide(-1,2)"
+            />
+          </div>
+        </div>
+        <div class="character sumeru1" id="sumeru_page">
+          <div class="shadowbg"></div>
+
+          <div class="bg-char">
+            <div class="each-char4">
+              <img
+                src="https://drive.google.com/uc?export=view&id=1glXlj7FIM29JD9uRXDog3Z1vuG6HrfZR"
+                class="logo_elemen"
+                alt=""
+              />
+              <!-- char and swoosh effect  -->
+              <img class="char-img" src="https://drive.google.com/uc?export=view&id=1SOczCoM-Hj4rAgApEK5wkg7auBoHEML9" />
+              <img
+                class="char-mobile"
+                src="https://drive.google.com/uc?export=view&id=13zn8_wioolPtRVvapDIKlvtpMlqfisdH"
+              />
+              <div class="char_exp">
+                <p class="nama_char">ALHAITHAM</p>
+                <div class="va">
+                  <span class="nama_va">
+                    <div class="symbol-wrap">
+                      <span class="symbol_va"></span>
+                    </div>
+                    <p class="text_va">VA: Umehara Yuui</p>
+                  </span>
+                  
+                </div>
+                <div class="keterangan">
+                  <!-- <div class="bg-transparan"> -->
+                  <p class="text_keterangan">
+                    The current scribe of the Sumeru Akademiya, a man endowed
+                    with extraordinary intelligence and talent. He lives free —
+                    free from the searching eyes of ordinary people, anyway.
+                  </p>
+                </div>
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1NDNk9nNkNUd5xsjGi92583Cyy-fJLyia"
+                  class="quote"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="each-char4">
+              <img
+                src="https://drive.google.com/uc?export=view&id=1aq81E17IIduM_TjykJnS0iInFg8KWKV8"
+                id="genchar"
+                alt=""
+                class="char-img"
+              />
+              <img
+                class="char-mobile"
+                src="https://drive.google.com/uc?export=view&id=15_t51NYE50BHtlAW98GllKvKF2p9-amo"
+              />
+              <img
+                src="https://drive.google.com/uc?export=view&id=1glXlj7FIM29JD9uRXDog3Z1vuG6HrfZR"
+                class="logo_elemen"
+                alt=""
+              />
+              <div class="char_exp">
+                <p class="nama_char">NAHIDA</p>
+                <div class="va">
+                  <span class="nama_va">
+                    <div class="symbol-wrap">
+                      <span class="symbol_va"></span>
+                    </div>
+                    <p class="text_va">VA: Tamura Yukari</p>
+                  </span>
+                  
+                </div>
+                <div class="keterangan">
+                  <!-- <div class="bg-transparan"> -->
+                  <p class="text_keterangan">
+                    Lesser Lord Kusanali dwells deep in the Sanctuary of
+                    Surasthana, and has never really been in the limelight, nor
+                    has she even been mentioned much. Her burden is heavy, but
+                    though she may experience loneliness, and though darkness is
+                    all she sees before her, she will not stop moving forward.
+                  </p>
+                  <!-- </div> -->
+                </div>
+                <img
+                  src="https://drive.google.com/uc?export=view&id=19CQkYim2OUh_VQOaFOk4wRv4l5QHFZF1"
+                  class="quote"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swoosh_wrap">
+              <img src="https://drive.google.com/uc?export=view&id=1W96_A2prLTRrG_uN9lHtn7WVslUW9iAX" alt="" class="swoosh" />
+            </div>
+          </div>
+          <div class="pilih_char">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1WMzXXN7k3RRT-1FMRzRHXpBIWtrZcAvr"
+              alt=""
+              class="tombol_pilih_char"
+              onclick="nextSlide(1,3)"
+            />
+            <div
+              id="charSlides"
+              class="card_monstadt"
+              onclick="showSlides(1,3)"
+            >
+              <div class="tgam_atas alhaitham"></div>
+              <div class="tgam_bawah">
+                <p class="nama_char_card">Alhaitham</p>
+              </div>
+            </div>
+            <div
+              id="charSlides"
+              class="card_monstadt"
+              onclick="showSlides(2,3)"
+            >
+              <div class="tgam_atas nahida"></div>
+              <div class="tgam_bawah">
+                <p class="nama_char_card">Nahida</p>
+              </div>
+            </div>
+            <img
+              src="https://drive.google.com/uc?export=view&id=1406EWskhKQ1xGP4aZ4qoXV4sHgHQGVRX"
+              alt=""
+              class="tombol_pilih_char"
+              onclick="nextSlide(-1,3)"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="header">
+        <div id="headerlogo">
+          <img src="https://drive.google.com/uc?export=view&id=17D0XrMxjhH2_-3OqmILBpRX0_UuQeIcW" alt="logo" />
+        </div>
+        <div class="headerselainlogo">
+          <div class="headerkiri">
+            <div class="header__navbar">
+              <a href="GenshinSourceCode.html" class="nav_text">HOME</a>
+              <!-- <a href="" class="nav_text">NEWS</a> -->
+              <a href="CharacterPage.html" class="nav_text"> CHARACTERS </a>
+              <a href="MapsPage.html" class="nav_text">MAPS</a>
+              <a href="AboutPage.html" class="nav_text">ABOUT</a>
+            </div>
+          </div>
+          <div class="headerkanan">
+            <div id="nav_register">
+              <a href="RegisterPage.html" class="nav_text" id="regis"
+                >REGISTER</a
+              >
+            </div>
+          </div>
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav">
+        <a href="GenshinSourceCode.html" class="nav-text">Home</a>
+        <a href="CharacterPage.html" class="nav-text">Characters</a>
+        <a href="MapsPage.html" class="nav-text">Maps</a>
+        <a href="AboutPage.html" class="nav-text">About</a>
+        <a href="RegisterPage.html" class="nav-text">Register</a>
+      </nav>
+      <div id="footer">
+        <div class="logo">
+          <div class="logoscreen">
+            <img src="https://drive.google.com/uc?export=view&id=16XXqaT1eMp3g4ui9J-v3ddCbcZs6cM4h" alt="" />
+            <img src="https://drive.google.com/uc?export=view&id=1971jsz4_vApjPr8dCRtWmqSe5W-OuGhg" alt="" />
+            <img src="https://drive.google.com/uc?export=view&id=1f3QWLTiKhnPd_RDdMqyM7TwL0VDLHV4Y" alt="" />
+            <img src="https://drive.google.com/uc?export=view&id=1EQ1X_8aSV4M0aMxQ-fWgOkhw5f_zWcjZ" alt="" />
+            <img src="https://drive.google.com/uc?export=view&id=1hIUzTWqKkRKSwFZU1taoG2FoIYyrPNGA" alt="" />
+            <img src="https://drive.google.com/uc?export=view&id=1YPOZcMZ956S1loQDVPwGCphUUeSz2RCY" alt="" />
+          </div>
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected">Facebook</span>
+            </div>
+            <ul class="menu">
+              <li class="option">Facebook</li>
+              <li class="option">Twitter</li>
+              <li class="option">Instagram</li>
+              <li class="option">Reddit</li>
+              <li class="option">Youtube</li>
+              <li class="option">Hoyolab</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer_genshin">
+          <img src="https://drive.google.com/uc?export=view&id=17D0XrMxjhH2_-3OqmILBpRX0_UuQeIcW" />
+        </div>
+        <div class="first_line">
+          <p class="underline">Privacy Policy</p>
+          <p class="underline">Terms of Service</p>
+          <p class="underline">About Us</p>
+          <p class="underline">Contact Us</p>
+        </div>
+        <p class="paragraph">
+          Jenshin Impekz is an open-world, action role-playing game that allows
+          the player to control one of four interchangeable characters in a party.
+          Switching between characters can be done quickly during combat, allowing
+          the player to use several different combinations of skills and attacks.
+        </p>
+        <div class="seclastline">
+          <div class="boxform">
+            <p class="saran">Please give your feedback</p>
+          </div>
+          <div class="kirim">
+            <p class="stext">send</p>
+          </div>
+        </div>
+        <div class="lastline">
+          <img src="https://drive.google.com/uc?export=view&id=1uZxfOGGrvb4ERkq2wCBH8ZwSlI26vh7M" alt="" />
+        </div>
+        <p class="copyright">Copyright © RGB. All rights Reserved.</p>
+      </div>
+
+    <script src="CharacterPage.js"></script>
+  </body>
+</html>
